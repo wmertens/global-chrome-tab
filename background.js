@@ -12,5 +12,11 @@ chrome.commands.onCommand.addListener(function(command) {
     chrome.windows.create({focused: true}, function(win){
       chrome.windows.update(win.id, {focused: true});
     });
+  } else if (command === 'new-incognito-window') {
+    // If you use this, you need to check "Allow in incognito" checkbox of the
+    // extension
+    chrome.windows.create({focused: true, incognito: true}, function(win){
+      chrome.windows.update(win.id, {focused: true});
+    });
   }
 });
