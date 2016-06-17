@@ -22,6 +22,9 @@
         },
         "new-window": {
             "description": "Switch to a new window from any application, ready for searching!"
+        },
+        "new-incognito-window": {
+            "description": "Switch to a new *incognito* window from any application, ready for searching! If you use this, you need to check \"Allow in incognito\" checkbox of the extension."
         }
     }
 }
