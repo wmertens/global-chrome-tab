@@ -8,9 +8,6 @@
     "background": {
         "scripts": ["background.js"]
     },
-    "permissions": [
-        "tabs"
-    ],
     "commands": {
         "new-tab": {
             "suggested_key": {
