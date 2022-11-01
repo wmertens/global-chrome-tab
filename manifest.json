@@ -1,27 +1,28 @@
 {
-    "name": "Global New Tab Shortcut",
-    "version": "1.2.1",
-    "manifest_version": 3,
-    "icons": {
-        "128": "new-tab.png"
+  "name": "Global New Tab Shortcut",
+  "version": "1.2.2",
+  "description": "Keyboard shortcuts to switch to a new window or tab from any application, ready for searching!",
+  "manifest_version": 3,
+  "icons": {
+    "128": "new-tab.png"
+  },
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "commands": {
+    "new-tab": {
+      "suggested_key": {
+        "default": "Alt+G",
+        "mac": "Command+Shift+S",
+        "linux": "Alt+G"
+      },
+      "description": "Switch to a new tab from any application, ready for searching!"
     },
-    "background": {
-        "service_worker": "background.js"
+    "new-window": {
+      "description": "Switch to a new window from any application, ready for searching!"
     },
-    "commands": {
-        "new-tab": {
-            "suggested_key": {
-                "default": "Alt+G",
-                "mac": "Command+Shift+S",
-                "linux": "Alt+G"
-            },
-            "description": "Switch to a new tab from any application, ready for searching!"
-        },
-        "new-window": {
-            "description": "Switch to a new window from any application, ready for searching!"
-        },
-        "new-incognito-window": {
-            "description": "Switch to a new *incognito* window from any application, ready for searching! To use this, you need to check the \"Allow in incognito\" checkbox of the extension."
-        }
+    "new-incognito-window": {
+      "description": "Switch to a new *incognito* window from any application, ready for searching! To use this, you need to check the \"Allow in incognito\" checkbox of the extension."
     }
+  }
 }
